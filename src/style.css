@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+
+  &::before,
+  &::after,
+  & {
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+  line-height: 1.5;
+  isolation: isolate;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  background-image: url("/waves.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+input {
+  border: 0.2rem solid #fff1;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #0007;
+  backdrop-filter: blur(0.5rem);
+  color: white;
+  transition: all 0.5s;
+
+  &::placeholder {
+    color: #fff7;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
