@@ -7,10 +7,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "eruda": "latest",
     "typescript": "latest",
     "vite": "latest"
   },
   "dependencies": {
-    "hls.js": "latest"
+    "beercss": "latest",
+    "dashjs": "latest"
   }
 }

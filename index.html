@@ -7,8 +7,32 @@
   <title>Dynamic Player</title>
 </head>
 
-<body>
-  <input placeholder="Enter audio URL here" />
+<body class="dark">
+  <main class="responsive middle-align vertical">
+    <!-- Hero -->
+    <article class="round">
+      <h1 class="large">Dynamic Player</h1>
+    </article>
+    <!-- Input -->
+    <div class="field label round fill" id="input">
+      <input type="url">
+      <label>Enter direct URL here</label>
+    </div>
+    <!-- Checkbox -->
+    <label class="checkbox">
+      <input type="checkbox">
+      <span>DASH</span>
+    </label>
+
+    <div class="medium-space"></div>
+    <!-- Audio Action Button -->
+    <button class="circle" id="actionBtn">
+      <i>stop</i>
+    </button>
+
+  </main>
+
+  <audio></audio>
 
   <script type="module" src="/src/main.ts"></script>
 </body>
